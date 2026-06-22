@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bo8r7wi1fqk8h"]
+
+[ext_resource type="Texture2D" uid="uid://6jlguqkk12r1" path="res://arte/DERRPTA.png" id="1_kkwv5"]
+[ext_resource type="Script" uid="uid://bnpfa3dswx6sr" path="res://reiniciar.gd" id="2_11exg"]
+
+[node name="Control" type="Control" unique_id=514089234]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Derrpta" type="Sprite2D" parent="." unique_id=149485351]
+position = Vector2(281.5, 200.49997)
+scale = Vector2(0.4058488, 0.3645276)
+texture = ExtResource("1_kkwv5")
+
+[node name="Button" type="Button" parent="." unique_id=2028457997]
+layout_mode = 0
+offset_right = 70.0
+offset_bottom = 33.0
+text = "VOLTAR"
+script = ExtResource("2_11exg")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

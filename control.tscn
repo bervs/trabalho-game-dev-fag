@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://c8uxxyvo4atf3"]
+
+[ext_resource type="Script" uid="uid://b3bm1tv0nbkwm" path="res://botão_jogar.gd" id="1_62e2m"]
+[ext_resource type="Texture2D" uid="uid://cti77p5pm37nx" path="res://arte/MENU.png" id="1_kbped"]
+[ext_resource type="Script" uid="uid://dlyiop2brl34m" path="res://botão_sair.gd" id="2_qtu10"]
+[ext_resource type="Script" uid="uid://cj4ingrssx6vb" path="res://h_slider.gd" id="3_ee4bf"]
+[ext_resource type="AudioStream" uid="uid://dy5mm8d4fs44n" path="res://happy_forest.wav" id="3_qtu10"]
+
+[node name="Control" type="Control" unique_id=902396738]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=594230563]
+layout_mode = 0
+offset_right = 570.0
+offset_bottom = 405.0
+texture = ExtResource("1_kbped")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1821651371]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.17500001
+anchor_bottom = 0.215
+offset_right = -58.000008
+offset_bottom = -46.0
+
+[node name="Botão Jogar" type="Button" parent="VBoxContainer" unique_id=58380753]
+layout_mode = 2
+theme_override_colors/font_focus_color = Color(2.9961393e-06, 0.5267913, 1.0588765e-06, 1)
+text = "Jogar"
+script = ExtResource("1_62e2m")
+
+[node name="Botão Sair" type="Button" parent="VBoxContainer" unique_id=443105228]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "Sair"
+script = ExtResource("2_qtu10")
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer" unique_id=1224431657]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+value = 0.5
+script = ExtResource("3_ee4bf")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1344016979]
+stream = ExtResource("3_qtu10")
+volume_db = 0.5
+pitch_scale = 1.5
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Botão Jogar" to="VBoxContainer/Botão Jogar" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/Botão Sair" to="VBoxContainer/Botão Sair" method="_on_pressed"]
+[connection signal="value_changed" from="VBoxContainer/HSlider" to="VBoxContainer/HSlider" method="_on_value_changed"]

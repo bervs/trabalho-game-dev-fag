@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bu4vcndbj8n6g"]
+
+[ext_resource type="Script" uid="uid://c8cb4ccbnjk0x" path="res://splash.gd" id="1_50j67"]
+[ext_resource type="Texture2D" uid="uid://c6cf7evfxcw0" path="res://arte/jogo.jpg" id="1_b04ml"]
+
+[node name="Control" type="Control" unique_id=58394430]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_50j67")
+
+[node name="Jogo" type="Sprite2D" parent="." unique_id=1937342086]
+position = Vector2(298, 199.00002)
+scale = Vector2(0.58984375, 0.72629696)
+texture = ExtResource("1_b04ml")

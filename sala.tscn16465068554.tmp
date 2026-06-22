@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bw42gdmela8x3"]
+
+[ext_resource type="Script" uid="uid://cbn7l6bd5fi6o" path="res://jogador.gd" id="1_8p6ll"]
+[ext_resource type="Script" uid="uid://kwgclljd87lq" path="res://fase.gd" id="1_fwdr4"]
+[ext_resource type="Texture2D" uid="uid://b3fal7wd06o6j" path="res://arte/circle.png" id="2_num3o"]
+[ext_resource type="Script" uid="uid://c8sw1x2ucmey" path="res://area_2d_jogador.gd" id="3_d4nyj"]
+[ext_resource type="Script" uid="uid://c3r67ck2e3rfy" path="res://enemy.gd" id="4_fwdr4"]
+[ext_resource type="Texture2D" uid="uid://5t880k2leohx" path="res://arte/red_circle.png" id="4_oo6i7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ix6dv"]
+radius = 7.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oo6i7"]
+radius = 8.0
+height = 26.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fwdr4"]
+radius = 9.0
+
+[node name="Sala" type="Node2D" unique_id=1651551471]
+script = ExtResource("1_fwdr4")
+
+[node name="Background" type="ColorRect" parent="." unique_id=539720125]
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 568.0
+offset_bottom = 403.0
+color = Color(0.09161059, 0.3411474, 0, 1)
+
+[node name="Jogador" type="CharacterBody2D" parent="." unique_id=246820205 groups=["player"]]
+script = ExtResource("1_8p6ll")
+
+[node name="Sprite2D" type="Sprite2D" parent="Jogador" unique_id=1972199151]
+position = Vector2(117, 115)
+texture = ExtResource("2_num3o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jogador" unique_id=711672030]
+visible = false
+position = Vector2(117, 115)
+shape = SubResource("CircleShape2D_ix6dv")
+
+[node name="Hitbox" type="Area2D" parent="Jogador" unique_id=2068451181]
+position = Vector2(117, 115)
+script = ExtResource("3_d4nyj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jogador/Hitbox" unique_id=227776806]
+position = Vector2(0, -5)
+shape = SubResource("CapsuleShape2D_oo6i7")
+
+[node name="Inimigos" type="Node2D" parent="." unique_id=374403582]
+
+[node name="Enemy" type="CharacterBody2D" parent="Inimigos" unique_id=584489745 groups=["enemy"]]
+script = ExtResource("4_fwdr4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy" unique_id=1674351496]
+position = Vector2(75, 204)
+texture = ExtResource("4_oo6i7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy" unique_id=914173748]
+position = Vector2(75, 203)
+shape = SubResource("CircleShape2D_fwdr4")
+
+[node name="Enemy2" type="CharacterBody2D" parent="Inimigos" unique_id=991774078 groups=["enemy"]]
+script = ExtResource("4_fwdr4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy2" unique_id=1108322965]
+position = Vector2(252, 225)
+texture = ExtResource("4_oo6i7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy2" unique_id=466619921]
+position = Vector2(252, 224)
+shape = SubResource("CircleShape2D_fwdr4")
+
+[node name="Enemy3" type="CharacterBody2D" parent="Inimigos" unique_id=1449303893 groups=["enemy"]]
+script = ExtResource("4_fwdr4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy3" unique_id=761261302]
+position = Vector2(278, 75)
+texture = ExtResource("4_oo6i7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy3" unique_id=1094113574]
+position = Vector2(278, 74)
+shape = SubResource("CircleShape2D_fwdr4")
+
+[connection signal="body_entered" from="Jogador/Hitbox" to="Jogador" method="_on_hitbox_body_entered"]

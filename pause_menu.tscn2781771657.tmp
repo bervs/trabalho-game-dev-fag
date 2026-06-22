@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dvd3h3m3jk25p"]
+
+[ext_resource type="Script" uid="uid://cw00g11oncrfd" path="res://pause_menu.gd" id="1_hdmo1"]
+
+[node name="PauseMenu" type="Control" unique_id=157331874]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hdmo1")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2022473720]
+process_mode = 3
+modulate = Color(1, 1, 1, 0.08235294)
+layout_mode = 0
+offset_right = 558.0
+offset_bottom = 398.0
+
+[node name="MenuContainer" type="VBoxContainer" parent="ColorRect" unique_id=1364846825]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 140.0
+offset_top = 37.0
+offset_right = 409.0
+offset_bottom = 350.0
+
+[node name="ResumeButton" type="Button" parent="ColorRect/MenuContainer" unique_id=57698043]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Retomar
+"
+
+[node name="RestarButton" type="Button" parent="ColorRect/MenuContainer" unique_id=769435104]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reiniciar
+"
+
+[node name="QuitButton" type="Button" parent="ColorRect/MenuContainer" unique_id=325744148]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Sair
+"
