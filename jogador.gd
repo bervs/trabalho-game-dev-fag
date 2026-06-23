@@ -51,6 +51,11 @@ func _on_hitbox_body_entered(body):
 		body.take_damage(10)
 
 var life = 80
+var vida_maxima = 80
+
+func heal(quantidade: float) -> void:
+	life = min(life + quantidade, vida_maxima)
+	print("Vida recuperada! Vida atual: ", life)
 
 func take_damage(damage):
 	if dead:

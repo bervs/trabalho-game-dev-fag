@@ -1,22 +1,24 @@
-[gd_scene format=3 uid="uid://bw42gdmela8x3"]
+[gd_scene format=3 uid="uid://ebdpcci8ksdy"]
 
-[ext_resource type="Script" uid="uid://cbn7l6bd5fi6o" path="res://jogador.gd" id="1_8p6ll"]
-[ext_resource type="Script" uid="uid://kwgclljd87lq" path="res://fase.gd" id="1_fwdr4"]
-[ext_resource type="Texture2D" uid="uid://b6bodc4xg6icv" path="res://arte/Background.png" id="2_b0vhe"]
-[ext_resource type="Script" uid="uid://c8sw1x2ucmey" path="res://area_2d_jogador.gd" id="3_d4nyj"]
-[ext_resource type="Script" uid="uid://c3r67ck2e3rfy" path="res://enemy.gd" id="4_fwdr4"]
-[ext_resource type="Texture2D" uid="uid://5t880k2leohx" path="res://arte/red_circle.png" id="4_oo6i7"]
-[ext_resource type="Texture2D" uid="uid://bk3x0arr3oplh" path="res://arte/Sombra.png" id="4_vi4yk"]
-[ext_resource type="Script" uid="uid://oro1eu7xeheh" path="res://e_hitbox.gd" id="7_libsc"]
-[ext_resource type="AudioStream" uid="uid://dy5mm8d4fs44n" path="res://happy_forest.wav" id="7_ocq2c"]
-[ext_resource type="Script" uid="uid://b6e45b74u5w07" path="res://luz.gd" id="10_8ir1k"]
-[ext_resource type="Script" uid="uid://bgyt3v5biqus2" path="res://canvas_layer.gd" id="11_vi4yk"]
-[ext_resource type="Texture2D" uid="uid://brd7l32l8vmqq" path="res://arte/Tenda_azul.png" id="12_wfnib"]
-[ext_resource type="Texture2D" uid="uid://c6rid7ww8a5jy" path="res://arte/Tenda_laranja.png" id="13_nuka0"]
-[ext_resource type="Texture2D" uid="uid://dkbwkuu3gqhpg" path="res://arte/Tenda_vermelha.png" id="14_4cwl0"]
-[ext_resource type="Texture2D" uid="uid://dmnm80xl0rk7a" path="res://arte/Tenda_verde.png" id="15_l4rdf"]
-[ext_resource type="Texture2D" uid="uid://cxwwuilba5jkg" path="res://arte/Tenda_roxa.png" id="16_16et2"]
-[ext_resource type="PackedScene" uid="uid://dvd3h3m3jk25p" path="res://pause_menu.tscn" id="17_nuka0"]
+[ext_resource type="Script" uid="uid://kwgclljd87lq" path="res://fase.gd" id="1_qplg2"]
+[ext_resource type="Texture2D" uid="uid://bi30eeiq4l4mr" path="res://arte/background_lvl2.png" id="2_qplg2"]
+[ext_resource type="Script" uid="uid://cbn7l6bd5fi6o" path="res://jogador.gd" id="3_aagd1"]
+[ext_resource type="Texture2D" uid="uid://bk3x0arr3oplh" path="res://arte/Sombra.png" id="4_1q1i3"]
+[ext_resource type="Script" uid="uid://c8sw1x2ucmey" path="res://area_2d_jogador.gd" id="5_bk8jw"]
+[ext_resource type="Script" uid="uid://d04in365sfujk" path="res://essencia.gd" id="6_aagd1"]
+[ext_resource type="Script" uid="uid://c3r67ck2e3rfy" path="res://enemy.gd" id="6_uw36n"]
+[ext_resource type="Texture2D" uid="uid://db8r1ayh5f5kv" path="res://arte/essence.png" id="7_1q1i3"]
+[ext_resource type="Texture2D" uid="uid://5t880k2leohx" path="res://arte/red_circle.png" id="7_v5ibx"]
+[ext_resource type="Script" uid="uid://oro1eu7xeheh" path="res://e_hitbox.gd" id="8_ujjlu"]
+[ext_resource type="AudioStream" uid="uid://dy5mm8d4fs44n" path="res://happy_forest.wav" id="9_e7crn"]
+[ext_resource type="Script" uid="uid://b6e45b74u5w07" path="res://luz.gd" id="10_uuinx"]
+[ext_resource type="Script" uid="uid://bgyt3v5biqus2" path="res://canvas_layer.gd" id="11_r7qyb"]
+[ext_resource type="Texture2D" uid="uid://brd7l32l8vmqq" path="res://arte/Tenda_azul.png" id="12_gu1ax"]
+[ext_resource type="Texture2D" uid="uid://c6rid7ww8a5jy" path="res://arte/Tenda_laranja.png" id="13_s066o"]
+[ext_resource type="Texture2D" uid="uid://dkbwkuu3gqhpg" path="res://arte/Tenda_vermelha.png" id="14_rfig4"]
+[ext_resource type="Texture2D" uid="uid://dmnm80xl0rk7a" path="res://arte/Tenda_verde.png" id="15_p5e05"]
+[ext_resource type="Texture2D" uid="uid://cxwwuilba5jkg" path="res://arte/Tenda_roxa.png" id="16_vdj1m"]
+[ext_resource type="PackedScene" uid="uid://dvd3h3m3jk25p" path="res://pause_menu.tscn" id="17_w421l"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ix6dv"]
 radius = 9.055386
@@ -24,6 +26,9 @@ radius = 9.055386
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oo6i7"]
 radius = 25.0
 height = 54.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aagd1"]
+radius = 12.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fwdr4"]
 radius = 9.0
@@ -34,6 +39,7 @@ radius = 12.0415945
 [sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_b0vhe"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8ir1k"]
+radius = 9.523365
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vi4yk"]
 size = Vector2(33, 410)
@@ -45,11 +51,11 @@ size = Vector2(193, 49)
 size = Vector2(166.625, 71)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_plnsv"]
-size = Vector2(44, 43)
+size = Vector2(44, 56.5)
 
 [node name="Sala" type="Node2D" unique_id=1651551471]
-script = ExtResource("1_fwdr4")
-proxima_fase = "res://sala_2.tscn"
+script = ExtResource("1_qplg2")
+proxima_fase = "res://sala_3.tscn"
 
 [node name="Background" type="ColorRect" parent="." unique_id=539720125]
 offset_left = -3.0
@@ -61,17 +67,17 @@ color = Color(0.09161059, 0.3411474, 0, 1)
 [node name="TextureRect" type="TextureRect" parent="." unique_id=199253655]
 offset_right = 564.0
 offset_bottom = 403.0
-texture = ExtResource("2_b0vhe")
+texture = ExtResource("2_qplg2")
 expand_mode = 1
 
 [node name="Jogador" type="CharacterBody2D" parent="." unique_id=246820205 groups=["player"]]
 position = Vector2(-17, 42)
-script = ExtResource("1_8p6ll")
+script = ExtResource("3_aagd1")
 
 [node name="Sprite2D" type="Sprite2D" parent="Jogador" unique_id=1972199151]
 visibility_layer = 2
 position = Vector2(290, 20)
-texture = ExtResource("4_vi4yk")
+texture = ExtResource("4_1q1i3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jogador" unique_id=711672030]
 visibility_layer = 2
@@ -81,12 +87,22 @@ debug_color = Color(0.7788917, 0.35349485, 0.6712029, 0.41960785)
 
 [node name="Hitbox" type="Area2D" parent="Jogador" unique_id=2068451181]
 position = Vector2(291, 24)
-script = ExtResource("3_d4nyj")
+script = ExtResource("5_bk8jw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Jogador/Hitbox" unique_id=227776806]
 position = Vector2(17, -7)
 shape = SubResource("CapsuleShape2D_oo6i7")
 debug_color = Color(0.7744065, 0.41967496, 0.3815653, 0.41960785)
+
+[node name="essencia" type="Area2D" parent="." unique_id=1739047422]
+position = Vector2(382, 245)
+script = ExtResource("6_aagd1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="essencia" unique_id=798390255]
+shape = SubResource("CircleShape2D_aagd1")
+
+[node name="Sprite2D" type="Sprite2D" parent="essencia" unique_id=1499666175]
+texture = ExtResource("7_1q1i3")
 
 [node name="Inimigos" type="Node2D" parent="." unique_id=374403582]
 process_mode = 1
@@ -95,11 +111,11 @@ position = Vector2(106, 30)
 [node name="Enemy" type="CharacterBody2D" parent="Inimigos" unique_id=1415742794 groups=["enemy"]]
 position = Vector2(-2, 144)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy" unique_id=1624941866]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy" unique_id=575918953]
 position = Vector2(2, 2)
@@ -108,7 +124,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy/CollisionShape2D" unique_id=1712038764]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy/CollisionShape2D/Area2D" unique_id=474115947]
 position = Vector2(-25, 23)
@@ -118,11 +134,11 @@ debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 [node name="Enemy2" type="CharacterBody2D" parent="Inimigos" unique_id=399014342 groups=["enemy"]]
 position = Vector2(165, 208)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy2" unique_id=2131964900]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy2" unique_id=1036047337]
 position = Vector2(2, 2)
@@ -131,7 +147,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy2/CollisionShape2D" unique_id=1992587207]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy2/CollisionShape2D/Area2D" unique_id=2139034032]
 position = Vector2(-25, 23)
@@ -141,11 +157,11 @@ debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 [node name="Enemy3" type="CharacterBody2D" parent="Inimigos" unique_id=94424487 groups=["enemy"]]
 position = Vector2(280, 267)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy3" unique_id=1752051582]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy3" unique_id=1216758263]
 position = Vector2(2, 2)
@@ -154,7 +170,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy3/CollisionShape2D" unique_id=802349027]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy3/CollisionShape2D/Area2D" unique_id=1728440986]
 position = Vector2(-25, 23)
@@ -164,11 +180,11 @@ debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 [node name="Enemy4" type="CharacterBody2D" parent="Inimigos" unique_id=965063495 groups=["enemy"]]
 position = Vector2(337, 97)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy4" unique_id=2056476550]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy4" unique_id=1290642513]
 position = Vector2(2, 2)
@@ -177,7 +193,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy4/CollisionShape2D" unique_id=46808749]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy4/CollisionShape2D/Area2D" unique_id=1344694388]
 position = Vector2(-25, 23)
@@ -187,11 +203,11 @@ debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 [node name="Enemy5" type="CharacterBody2D" parent="Inimigos" unique_id=337910708 groups=["enemy"]]
 position = Vector2(321, 168)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy5" unique_id=1773403511]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy5" unique_id=247346277]
 position = Vector2(2, 2)
@@ -200,7 +216,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy5/CollisionShape2D" unique_id=181303250]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy5/CollisionShape2D/Area2D" unique_id=800083646]
 position = Vector2(-25, 23)
@@ -210,11 +226,11 @@ debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 [node name="Enemy6" type="CharacterBody2D" parent="Inimigos" unique_id=210155020 groups=["enemy"]]
 position = Vector2(201, 168)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy6" unique_id=1493797476]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy6" unique_id=338182222]
 position = Vector2(2, 2)
@@ -223,7 +239,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy6/CollisionShape2D" unique_id=1702923772]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy6/CollisionShape2D/Area2D" unique_id=1282768341]
 position = Vector2(-25, 23)
@@ -233,11 +249,11 @@ debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 [node name="Enemy7" type="CharacterBody2D" parent="Inimigos" unique_id=1810478758 groups=["enemy"]]
 position = Vector2(30, 288)
 safe_margin = 0.05
-script = ExtResource("4_fwdr4")
+script = ExtResource("6_uw36n")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inimigos/Enemy7" unique_id=1921686260]
 position = Vector2(2, 2)
-texture = ExtResource("4_oo6i7")
+texture = ExtResource("7_v5ibx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy7" unique_id=1163931076]
 position = Vector2(2, 2)
@@ -246,7 +262,7 @@ debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
 
 [node name="Area2D" type="Area2D" parent="Inimigos/Enemy7/CollisionShape2D" unique_id=1643662192]
 position = Vector2(25, -23)
-script = ExtResource("7_libsc")
+script = ExtResource("8_ujjlu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Enemy7/CollisionShape2D/Area2D" unique_id=1759435754]
 position = Vector2(-25, 23)
@@ -254,7 +270,7 @@ shape = SubResource("CircleShape2D_wfnib")
 debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1612059501]
-stream = ExtResource("7_ocq2c")
+stream = ExtResource("9_e7crn")
 autoplay = true
 
 [node name="Fogueira" type="Node2D" parent="." unique_id=135962159]
@@ -269,7 +285,7 @@ texture_scale = 25.61
 
 [node name="Area2D" type="Area2D" parent="Fogueira" unique_id=954449984]
 collision_layer = 2
-script = ExtResource("10_8ir1k")
+script = ExtResource("10_uuinx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fogueira/Area2D" unique_id=27632127]
 position = Vector2(3, 2)
@@ -277,13 +293,56 @@ scale = Vector2(6, 6)
 shape = SubResource("CircleShape2D_8ir1k")
 debug_color = Color(0.6302241, 0.529174, 0.07160889, 0.41960785)
 
+[node name="Fogueira2" type="Node2D" parent="." unique_id=2136480249]
+position = Vector2(359, 135)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fogueira2" unique_id=391125963]
+
+[node name="PointLight2D" type="PointLight2D" parent="Fogueira2" unique_id=1067336753]
+color = Color(0.509489, 0.50763047, 0, 1)
+texture = SubResource("PortableCompressedTexture2D_b0vhe")
+texture_scale = 25.61
+
+[node name="Area2D" type="Area2D" parent="Fogueira2" unique_id=343424190]
+position = Vector2(-11, 2)
+collision_layer = 2
+script = ExtResource("10_uuinx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fogueira2/Area2D" unique_id=1691748882]
+position = Vector2(14, -3)
+scale = Vector2(6, 6)
+shape = SubResource("CircleShape2D_8ir1k")
+debug_color = Color(0.6302241, 0.529174, 0.07160889, 0.41960785)
+
+[node name="Fogueira3" type="Node2D" parent="." unique_id=1281384951]
+position = Vector2(138, 281)
+
+[node name="Sprite2D" type="Sprite2D" parent="Fogueira3" unique_id=263007879]
+
+[node name="PointLight2D" type="PointLight2D" parent="Fogueira3" unique_id=236217468]
+color = Color(0.509489, 0.50763047, 0, 1)
+texture = SubResource("PortableCompressedTexture2D_b0vhe")
+texture_scale = 25.61
+
+[node name="Area2D" type="Area2D" parent="Fogueira3" unique_id=2001276234]
+position = Vector2(-11, 2)
+collision_layer = 2
+script = ExtResource("10_uuinx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fogueira3/Area2D" unique_id=1211057677]
+position = Vector2(13, 4)
+scale = Vector2(6, 6)
+shape = SubResource("CircleShape2D_8ir1k")
+debug_color = Color(0.6302241, 0.529174, 0.07160889, 0.41960785)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1189757666]
-script = ExtResource("11_vi4yk")
+script = ExtResource("11_r7qyb")
 
 [node name="VidaLabel" type="Label" parent="CanvasLayer" unique_id=31352584]
 custom_minimum_size = Vector2(10, 10)
 offset_right = 40.0
 offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Parede" type="StaticBody2D" parent="." unique_id=1578941762]
 visibility_layer = 2
@@ -336,22 +395,22 @@ shape = SubResource("RectangleShape2D_l1guu")
 
 [node name="AreaTenda" type="CollisionShape2D" parent="Parede" unique_id=722214003]
 visibility_layer = 2
-position = Vector2(196, 147.5)
+position = Vector2(198, 100)
 shape = SubResource("RectangleShape2D_plnsv")
 
 [node name="AreaTenda2" type="CollisionShape2D" parent="Parede" unique_id=1604494081]
 visibility_layer = 2
-position = Vector2(84, 78.5)
+position = Vector2(127, 208)
 shape = SubResource("RectangleShape2D_plnsv")
 
 [node name="AreaTenda3" type="CollisionShape2D" parent="Parede" unique_id=1475033928]
 visibility_layer = 2
-position = Vector2(182, 244.5)
+position = Vector2(288, 272)
 shape = SubResource("RectangleShape2D_plnsv")
 
 [node name="AreaTenda4" type="CollisionShape2D" parent="Parede" unique_id=1303867995]
 visibility_layer = 2
-position = Vector2(324, 125.5)
+position = Vector2(348, 51.25)
 shape = SubResource("RectangleShape2D_plnsv")
 
 [node name="AreaTenda5" type="CollisionShape2D" parent="Parede" unique_id=1132064509]
@@ -360,28 +419,30 @@ position = Vector2(464, 54.5)
 shape = SubResource("RectangleShape2D_plnsv")
 
 [node name="Objetos" type="Node2D" parent="." unique_id=1756368164]
+position = Vector2(-1, 0)
 
 [node name="Tenda2" type="Sprite2D" parent="Objetos" unique_id=859497643]
-position = Vector2(214, 164)
-texture = ExtResource("12_wfnib")
+position = Vector2(216, 118)
+texture = ExtResource("12_gu1ax")
 
 [node name="Tenda" type="Sprite2D" parent="Objetos" unique_id=590635133]
-position = Vector2(102, 95)
-texture = ExtResource("13_nuka0")
+position = Vector2(144, 224)
+texture = ExtResource("13_s066o")
 
 [node name="Tenda3" type="Sprite2D" parent="Objetos" unique_id=1926348649]
-position = Vector2(200, 261)
-texture = ExtResource("14_4cwl0")
+position = Vector2(306, 291)
+texture = ExtResource("14_rfig4")
 
 [node name="Tenda4" type="Sprite2D" parent="Objetos" unique_id=1144992005]
-position = Vector2(342, 142)
-texture = ExtResource("15_l4rdf")
+position = Vector2(366, 72)
+texture = ExtResource("15_p5e05")
 
 [node name="Tenda5" type="Sprite2D" parent="Objetos" unique_id=222925166]
-position = Vector2(482, 71)
-texture = ExtResource("16_16et2")
+position = Vector2(483, 77)
+texture = ExtResource("16_vdj1m")
 
-[node name="PauseMenu" parent="." unique_id=157331874 instance=ExtResource("17_nuka0")]
+[node name="PauseMenu" parent="." unique_id=157331874 instance=ExtResource("17_w421l")]
+visible = false
 
 [connection signal="body_entered" from="Jogador/Hitbox" to="Jogador" method="_on_hitbox_body_entered"]
 [connection signal="body_entered" from="Inimigos/Enemy/CollisionShape2D/Area2D" to="Inimigos/Enemy/CollisionShape2D/Area2D" method="_on_body_entered"]
@@ -393,3 +454,7 @@ texture = ExtResource("16_16et2")
 [connection signal="body_entered" from="Inimigos/Enemy7/CollisionShape2D/Area2D" to="Inimigos/Enemy7/CollisionShape2D/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Fogueira/Area2D" to="Fogueira/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Fogueira/Area2D" to="Fogueira/Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Fogueira2/Area2D" to="Fogueira2/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Fogueira2/Area2D" to="Fogueira2/Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Fogueira3/Area2D" to="Fogueira3/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Fogueira3/Area2D" to="Fogueira3/Area2D" method="_on_body_exited"]
