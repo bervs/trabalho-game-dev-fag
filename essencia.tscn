@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cd4u6lckkqw0t"]
+
+[ext_resource type="Script" path="res://essencia.gd" id="1_fis11"]
+[ext_resource type="Texture2D" uid="uid://db8r1ayh5f5kv" path="res://arte/essence.png" id="2_2nqjk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1ma20"]
+radius = 12.0
+
+[node name="essencia" type="Area2D" unique_id=852186627]
+script = ExtResource("1_fis11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=791126523]
+shape = SubResource("CircleShape2D_1ma20")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=803995887]
+texture = ExtResource("2_2nqjk")

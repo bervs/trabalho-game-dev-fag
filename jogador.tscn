@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ckt7ijyrjxtyi"]
+
+[ext_resource type="Script" uid="uid://cbn7l6bd5fi6o" path="res://jogador.gd" id="1_q2130"]
+[ext_resource type="Texture2D" uid="uid://bk3x0arr3oplh" path="res://arte/Sombra.png" id="2_4obgb"]
+[ext_resource type="Script" uid="uid://c8sw1x2ucmey" path="res://area_2d_jogador.gd" id="3_j3kwt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ix6dv"]
+radius = 9.055386
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oo6i7"]
+radius = 25.0
+height = 54.0
+
+[node name="Jogador" type="CharacterBody2D" unique_id=1517432286 groups=["player"]]
+script = ExtResource("1_q2130")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1799471440]
+visibility_layer = 2
+position = Vector2(290, 20)
+texture = ExtResource("2_4obgb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1136060863]
+visibility_layer = 2
+position = Vector2(291, 19)
+shape = SubResource("CircleShape2D_ix6dv")
+debug_color = Color(0.7788917, 0.35349485, 0.6712029, 0.41960785)
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1960694500]
+position = Vector2(291, 24)
+script = ExtResource("3_j3kwt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=950742033]
+position = Vector2(17, -7)
+shape = SubResource("CapsuleShape2D_oo6i7")
+debug_color = Color(0.7744065, 0.41967496, 0.3815653, 0.41960785)
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

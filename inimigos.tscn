@@ -1,0 +1,183 @@
+[gd_scene format=3 uid="uid://v1pdtwi4wehd"]
+
+[ext_resource type="Script" uid="uid://c3r67ck2e3rfy" path="res://enemy.gd" id="1_8pes2"]
+[ext_resource type="Texture2D" uid="uid://5t880k2leohx" path="res://arte/red_circle.png" id="2_iaahx"]
+[ext_resource type="Script" uid="uid://oro1eu7xeheh" path="res://e_hitbox.gd" id="3_pwn1i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fwdr4"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wfnib"]
+radius = 12.0415945
+
+[node name="Inimigos" type="Node2D" unique_id=2069391470]
+process_mode = 1
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=138401046 groups=["enemy"]]
+position = Vector2(-2, 144)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=1303306409]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=1812356806]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy/CollisionShape2D" unique_id=2121184487]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/CollisionShape2D/Area2D" unique_id=230188910]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[node name="Enemy2" type="CharacterBody2D" parent="." unique_id=1717306972 groups=["enemy"]]
+position = Vector2(165, 208)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy2" unique_id=860819092]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2" unique_id=882254545]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy2/CollisionShape2D" unique_id=142538323]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2/CollisionShape2D/Area2D" unique_id=264921335]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[node name="Enemy3" type="CharacterBody2D" parent="." unique_id=118441506 groups=["enemy"]]
+position = Vector2(280, 267)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy3" unique_id=1889551777]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy3" unique_id=2044085698]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy3/CollisionShape2D" unique_id=1888247454]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy3/CollisionShape2D/Area2D" unique_id=241784644]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[node name="Enemy4" type="CharacterBody2D" parent="." unique_id=1632168827 groups=["enemy"]]
+position = Vector2(337, 97)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy4" unique_id=420684407]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy4" unique_id=8704430]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy4/CollisionShape2D" unique_id=2001696947]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy4/CollisionShape2D/Area2D" unique_id=155184536]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[node name="Enemy5" type="CharacterBody2D" parent="." unique_id=1773666867 groups=["enemy"]]
+position = Vector2(321, 168)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy5" unique_id=1770006815]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy5" unique_id=555748966]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy5/CollisionShape2D" unique_id=1024317752]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy5/CollisionShape2D/Area2D" unique_id=424460645]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[node name="Enemy6" type="CharacterBody2D" parent="." unique_id=791627396 groups=["enemy"]]
+position = Vector2(201, 168)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy6" unique_id=575937792]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy6" unique_id=981784079]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy6/CollisionShape2D" unique_id=1186804012]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy6/CollisionShape2D/Area2D" unique_id=1063140818]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[node name="Enemy7" type="CharacterBody2D" parent="." unique_id=1654465168 groups=["enemy"]]
+position = Vector2(30, 288)
+safe_margin = 0.05
+script = ExtResource("1_8pes2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy7" unique_id=22741282]
+position = Vector2(2, 2)
+texture = ExtResource("2_iaahx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy7" unique_id=627171255]
+position = Vector2(2, 2)
+shape = SubResource("CircleShape2D_fwdr4")
+debug_color = Color(0.07828165, 0.64526796, 0.21913654, 0.41960785)
+
+[node name="Area2D" type="Area2D" parent="Enemy7/CollisionShape2D" unique_id=1567264543]
+position = Vector2(25, -23)
+script = ExtResource("3_pwn1i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy7/CollisionShape2D/Area2D" unique_id=404370525]
+position = Vector2(-25, 23)
+shape = SubResource("CircleShape2D_wfnib")
+debug_color = Color(0.3504246, 0.52876246, 0.8569803, 0.41960785)
+
+[connection signal="body_entered" from="Enemy/CollisionShape2D/Area2D" to="Enemy/CollisionShape2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemy2/CollisionShape2D/Area2D" to="Enemy2/CollisionShape2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemy3/CollisionShape2D/Area2D" to="Enemy3/CollisionShape2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemy4/CollisionShape2D/Area2D" to="Enemy4/CollisionShape2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemy5/CollisionShape2D/Area2D" to="Enemy5/CollisionShape2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemy6/CollisionShape2D/Area2D" to="Enemy6/CollisionShape2D/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Enemy7/CollisionShape2D/Area2D" to="Enemy7/CollisionShape2D/Area2D" method="_on_body_entered"]

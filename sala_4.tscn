@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bk3x0arr3oplh" path="res://arte/Sombra.png" id="4_ncymm"]
 [ext_resource type="Script" uid="uid://c8sw1x2ucmey" path="res://area_2d_jogador.gd" id="5_at0e2"]
 [ext_resource type="Script" uid="uid://c3r67ck2e3rfy" path="res://enemy.gd" id="6_6mwnf"]
-[ext_resource type="Script" uid="uid://d04in365sfujk" path="res://essencia.gd" id="6_at0e2"]
+[ext_resource type="Script" path="res://essencia.gd" id="6_at0e2"]
 [ext_resource type="Texture2D" uid="uid://db8r1ayh5f5kv" path="res://arte/essence.png" id="7_6mwnf"]
 [ext_resource type="Texture2D" uid="uid://5t880k2leohx" path="res://arte/red_circle.png" id="7_tcvwl"]
 [ext_resource type="Script" uid="uid://oro1eu7xeheh" path="res://e_hitbox.gd" id="8_0evn7"]
@@ -57,6 +57,7 @@ size = Vector2(44, 50.25)
 
 [node name="Sala" type="Node2D" unique_id=1651551471]
 script = ExtResource("1_7sr8l")
+proxima_fase = "res://sala_boss.tscn"
 
 [node name="Background" type="ColorRect" parent="." unique_id=539720125]
 offset_left = -3.0

@@ -12,9 +12,8 @@
 [ext_resource type="AudioStream" uid="uid://dy5mm8d4fs44n" path="res://happy_forest.wav" id="9_hh2ov"]
 [ext_resource type="Script" uid="uid://b6e45b74u5w07" path="res://luz.gd" id="10_15p5b"]
 [ext_resource type="Script" uid="uid://bgyt3v5biqus2" path="res://canvas_layer.gd" id="11_i7l01"]
+[ext_resource type="PackedScene" uid="uid://cd4u6lckkqw0t" path="res://essencia.tscn" id="15_2noi8"]
 [ext_resource type="Texture2D" uid="uid://dmnm80xl0rk7a" path="res://arte/Tenda_verde.png" id="15_8iohn"]
-[ext_resource type="Script" uid="uid://d04in365sfujk" path="res://essencia.gd" id="15_ghafi"]
-[ext_resource type="Texture2D" uid="uid://db8r1ayh5f5kv" path="res://arte/essence.png" id="16_78vk0"]
 [ext_resource type="Texture2D" uid="uid://cxwwuilba5jkg" path="res://arte/Tenda_roxa.png" id="16_knmrx"]
 [ext_resource type="PackedScene" uid="uid://dvd3h3m3jk25p" path="res://pause_menu.tscn" id="17_4fbvx"]
 
@@ -49,9 +48,6 @@ size = Vector2(166.625, 96.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_plnsv"]
 size = Vector2(44, 50.25)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_1ma20"]
-radius = 12.0
 
 [node name="Sala" type="Node2D" unique_id=1651551471]
 script = ExtResource("1_ghafi")
@@ -342,15 +338,8 @@ texture = ExtResource("15_8iohn")
 position = Vector2(310, 138)
 texture = ExtResource("16_knmrx")
 
-[node name="essencia" type="Area2D" parent="." unique_id=1488061149]
+[node name="essencia" parent="." unique_id=852186627 instance=ExtResource("15_2noi8")]
 position = Vector2(98, 272)
-script = ExtResource("15_ghafi")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="essencia" unique_id=1081711920]
-shape = SubResource("CircleShape2D_1ma20")
-
-[node name="Sprite2D" type="Sprite2D" parent="essencia" unique_id=64818417]
-texture = ExtResource("16_78vk0")
 
 [node name="PauseMenu" parent="." unique_id=157331874 instance=ExtResource("17_4fbvx")]
 visible = false

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bvi5efo08tur5"]
+
+[ext_resource type="Script" uid="uid://b6e45b74u5w07" path="res://luz.gd" id="1_6n5i6"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_b0vhe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ir1k"]
+
+[node name="Fogueira" type="Node2D" unique_id=1310815235]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=370106068]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1586323052]
+color = Color(0.509489, 0.50763047, 0, 1)
+texture = SubResource("PortableCompressedTexture2D_b0vhe")
+texture_scale = 25.61
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1421835339]
+collision_layer = 2
+script = ExtResource("1_6n5i6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=660854766]
+position = Vector2(3, 2)
+scale = Vector2(6, 6)
+shape = SubResource("CircleShape2D_8ir1k")
+debug_color = Color(0.6302241, 0.529174, 0.07160889, 0.41960785)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

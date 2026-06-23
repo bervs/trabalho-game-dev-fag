@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var inimigos = $Inimigos
 
-@export var proxima_fase: String = "res://Vitoria.tscn"
+@export var proxima_fase: String = "res://vitoria.tscn"
 
 func venceu():
 	print("VOCÊ VENCEU")

@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dcnedvnlwxm2l"]
+
+[ext_resource type="Script" uid="uid://5qdhk6lqag0a" path="res://IrVitoria.gd" id="1_3sshf"]
+[ext_resource type="Texture2D" uid="uid://8r61nxvdep7q" path="res://arte/Gemini_Generated_Image_e5c6bme5c6bme5c6.png" id="1_s7vlu"]
+[ext_resource type="PackedScene" uid="uid://ckt7ijyrjxtyi" path="res://jogador.tscn" id="2_jycnr"]
+[ext_resource type="PackedScene" uid="uid://v1pdtwi4wehd" path="res://inimigos.tscn" id="3_xxu1h"]
+[ext_resource type="Texture2D" uid="uid://5t880k2leohx" path="res://arte/red_circle.png" id="4_47m48"]
+[ext_resource type="PackedScene" uid="uid://otocj04w6rtg" path="res://parede.tscn" id="4_hvatv"]
+[ext_resource type="Script" uid="uid://b4o60o4ni1gs6" path="res://boss.gd" id="5_4dew3"]
+[ext_resource type="PackedScene" uid="uid://1saj41p3seb5" path="res://objetos.tscn" id="5_mnfdg"]
+[ext_resource type="PackedScene" uid="uid://bvi5efo08tur5" path="res://fogueira.tscn" id="6_47m48"]
+[ext_resource type="PackedScene" uid="uid://cd4u6lckkqw0t" path="res://essencia.tscn" id="7_4dew3"]
+[ext_resource type="PackedScene" uid="uid://dvd3h3m3jk25p" path="res://pause_menu.tscn" id="8_mnfdg"]
+[ext_resource type="Script" uid="uid://bgyt3v5biqus2" path="res://canvas_layer.gd" id="9_47m48"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_47m48"]
+
+[node name="sala_boss" type="Node2D" unique_id=2031182471]
+script = ExtResource("1_3sshf")
+
+[node name="GeminiGeneratedImageE5c6Bme5c6Bme5c6" type="Sprite2D" parent="." unique_id=1933594708]
+position = Vector2(314.87497, 199.40625)
+scale = Vector2(0.51375604, 0.49432492)
+texture = ExtResource("1_s7vlu")
+
+[node name="Jogador" parent="." unique_id=1517432286 instance=ExtResource("2_jycnr")]
+position = Vector2(13, 11)
+
+[node name="Inimigos" parent="." unique_id=2069391470 groups=["enemy"] instance=ExtResource("3_xxu1h")]
+position = Vector2(125, 62)
+
+[node name="Boss" type="CharacterBody2D" parent="Inimigos" unique_id=218643839]
+position = Vector2(10, 4)
+script = ExtResource("5_4dew3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Inimigos/Boss" unique_id=1935060745]
+position = Vector2(259, 132)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("4_47m48")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Inimigos/Boss" unique_id=887366241]
+position = Vector2(259, 129)
+scale = Vector2(3.3, 3.3)
+shape = SubResource("CircleShape2D_47m48")
+
+[node name="Parede" parent="." unique_id=14561374 instance=ExtResource("4_hvatv")]
+position = Vector2(17, 15)
+
+[node name="Objetos" parent="." unique_id=855958679 instance=ExtResource("5_mnfdg")]
+
+[node name="Fogueira" parent="." unique_id=1310815235 instance=ExtResource("6_47m48")]
+position = Vector2(303, 202)
+
+[node name="essencia" parent="." unique_id=852186627 instance=ExtResource("7_4dew3")]
+position = Vector2(117, 158)
+
+[node name="essencia2" parent="." unique_id=1213545109 instance=ExtResource("7_4dew3")]
+position = Vector2(468, 211)
+
+[node name="essencia3" parent="." unique_id=768848485 instance=ExtResource("7_4dew3")]
+position = Vector2(409, 100)
+
+[node name="essencia4" parent="." unique_id=1864966114 instance=ExtResource("7_4dew3")]
+position = Vector2(269, 340)
+
+[node name="PauseMenu" parent="." unique_id=157331874 instance=ExtResource("8_mnfdg")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1199283809]
+script = ExtResource("9_47m48")
+
+[node name="VidaLabel" type="Label" parent="CanvasLayer" unique_id=1217383815]
+custom_minimum_size = Vector2(10, 10)
+offset_right = 40.0
+offset_bottom = 23.0

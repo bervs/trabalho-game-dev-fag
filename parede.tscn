@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://otocj04w6rtg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vi4yk"]
+size = Vector2(33, 410)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cb44k"]
+size = Vector2(193, 49)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1guu"]
+size = Vector2(166.625, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_plnsv"]
+size = Vector2(44, 43)
+
+[node name="Parede" type="StaticBody2D" unique_id=14561374]
+visibility_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=313817061]
+visibility_layer = 2
+position = Vector2(-0.5, 184)
+shape = SubResource("RectangleShape2D_vi4yk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=526509573]
+visibility_layer = 2
+position = Vector2(528, 185)
+shape = SubResource("RectangleShape2D_vi4yk")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=2045844895]
+visibility_layer = 2
+position = Vector2(110.5, 2)
+shape = SubResource("RectangleShape2D_cb44k")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=2106077631]
+visibility_layer = 2
+position = Vector2(446, 5)
+shape = SubResource("RectangleShape2D_cb44k")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=212525429]
+visibility_layer = 2
+position = Vector2(263, -32)
+shape = SubResource("RectangleShape2D_cb44k")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=658809452]
+visibility_layer = 2
+position = Vector2(257, 399)
+shape = SubResource("RectangleShape2D_cb44k")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=1891619820]
+visibility_layer = 2
+position = Vector2(79, 372)
+shape = SubResource("RectangleShape2D_l1guu")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="." unique_id=1868150213]
+visibility_layer = 2
+position = Vector2(-23, 333)
+shape = SubResource("RectangleShape2D_l1guu")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="." unique_id=349857779]
+visibility_layer = 2
+position = Vector2(437.6875, 376)
+shape = SubResource("RectangleShape2D_l1guu")
+
+[node name="AreaTenda" type="CollisionShape2D" parent="." unique_id=783659582]
+visibility_layer = 2
+position = Vector2(196, 147.5)
+shape = SubResource("RectangleShape2D_plnsv")
+
+[node name="AreaTenda2" type="CollisionShape2D" parent="." unique_id=1428710640]
+visibility_layer = 2
+position = Vector2(84, 78.5)
+shape = SubResource("RectangleShape2D_plnsv")
+
+[node name="AreaTenda3" type="CollisionShape2D" parent="." unique_id=1265438557]
+visibility_layer = 2
+position = Vector2(182, 244.5)
+shape = SubResource("RectangleShape2D_plnsv")
+
+[node name="AreaTenda4" type="CollisionShape2D" parent="." unique_id=1786163774]
+visibility_layer = 2
+position = Vector2(324, 125.5)
+shape = SubResource("RectangleShape2D_plnsv")
+
+[node name="AreaTenda5" type="CollisionShape2D" parent="." unique_id=208136058]
+visibility_layer = 2
+position = Vector2(464, 54.5)
+shape = SubResource("RectangleShape2D_plnsv")

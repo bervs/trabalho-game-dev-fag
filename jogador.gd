@@ -44,8 +44,15 @@ func attack():
 	hitbox.monitoring = false
 
 func _on_hitbox_body_entered(body):
-	if body == get_parent():
+	# Se o corpo que entrou na hitbox for o próprio jogador, ignora!
+	if body == self:
 		return
+
+	if body.has_method("take_damage"):
+		body.take_damage(10)
+
+	if body.has_method("take_damage"):
+		body.take_damage(10)
 
 	if body.has_method("take_damage"):
 		body.take_damage(10)

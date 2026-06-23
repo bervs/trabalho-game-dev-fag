@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://1saj41p3seb5"]
+
+[ext_resource type="Texture2D" uid="uid://brd7l32l8vmqq" path="res://arte/Tenda_azul.png" id="1_gj7k1"]
+[ext_resource type="Texture2D" uid="uid://c6rid7ww8a5jy" path="res://arte/Tenda_laranja.png" id="2_74x11"]
+[ext_resource type="Texture2D" uid="uid://dkbwkuu3gqhpg" path="res://arte/Tenda_vermelha.png" id="3_c2ug3"]
+[ext_resource type="Texture2D" uid="uid://dmnm80xl0rk7a" path="res://arte/Tenda_verde.png" id="4_yxo7t"]
+[ext_resource type="Texture2D" uid="uid://cxwwuilba5jkg" path="res://arte/Tenda_roxa.png" id="5_mv5y6"]
+
+[node name="Objetos" type="Node2D" unique_id=855958679]
+
+[node name="Tenda2" type="Sprite2D" parent="." unique_id=422524912]
+position = Vector2(214, 164)
+texture = ExtResource("1_gj7k1")
+
+[node name="Tenda" type="Sprite2D" parent="." unique_id=1974830838]
+position = Vector2(102, 95)
+texture = ExtResource("2_74x11")
+
+[node name="Tenda3" type="Sprite2D" parent="." unique_id=70155888]
+position = Vector2(200, 261)
+texture = ExtResource("3_c2ug3")
+
+[node name="Tenda4" type="Sprite2D" parent="." unique_id=1183541919]
+position = Vector2(342, 142)
+texture = ExtResource("4_yxo7t")
+
+[node name="Tenda5" type="Sprite2D" parent="." unique_id=650355132]
+position = Vector2(482, 71)
+texture = ExtResource("5_mv5y6")
